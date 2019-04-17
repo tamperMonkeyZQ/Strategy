@@ -1,0 +1,4 @@
+2019-04-16 22:10:46.392 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - 对象名 'strategydb.ts_user' 无效。
+2019-04-16 22:15:03.791 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - 列名 'user_id' 无效。
+2019-04-16 22:20:11.239 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - 列名 'user_name' 无效。
+2019-04-16 22:21:41.522 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - 列名 'user_name' 无效。

@@ -1,0 +1,239 @@
+2019-04-16 22:10:22.571 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 20772 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:10:22.574 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:10:28.171 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:10:28.373 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 167ms. Found 1 repository interfaces.
+2019-04-16 22:10:29.945 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9d942932] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:10:30.784 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:10:31.660 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:10:31.733 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:10:32.236 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:10:32.918 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:10:32.922 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:10:33.865 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:10:34.670 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:10:34.751 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:10:37.145 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:10:40.775 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:10:44.570 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:10:44.780 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:10:44.934 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 24.705 seconds (JVM running for 28.763)
+2019-04-16 22:10:45.660 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:10:46.469 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:10:46.479 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:10:46.486 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:10:46.493 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:10:46.503 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:14:40.576 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 18372 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:14:40.578 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:14:46.476 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:14:46.791 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 275ms. Found 1 repository interfaces.
+2019-04-16 22:14:48.716 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e7bacf1b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:14:49.496 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:14:50.585 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:14:50.693 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:14:51.413 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:14:51.674 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:14:51.682 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:14:52.117 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:14:52.617 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:14:52.663 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:14:54.151 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:14:58.376 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:15:02.506 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:15:02.789 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:15:02.966 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 24.096 seconds (JVM running for 28.783)
+2019-04-16 22:15:03.477 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:15:03.850 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:15:03.855 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:15:03.863 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:15:03.876 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:15:03.886 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:16:20.032 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 17768 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:16:20.034 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:16:23.404 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:16:23.746 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 307ms. Found 1 repository interfaces.
+2019-04-16 22:16:25.324 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ff9a6a00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:16:26.037 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:16:27.020 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:16:27.134 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:16:27.394 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:16:27.722 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:16:27.729 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:16:28.275 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:16:28.735 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:16:28.789 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:16:30.278 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:16:33.762 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:16:37.153 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:16:37.388 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:16:37.606 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 18.978 seconds (JVM running for 22.445)
+2019-04-16 22:16:38.101 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:16:38.588 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:16:38.590 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:16:38.596 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:16:38.601 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:16:38.607 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:17:07.823 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 12996 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:17:07.827 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:17:12.074 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:17:12.300 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 197ms. Found 1 repository interfaces.
+2019-04-16 22:17:13.943 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$73124a3b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:17:15.410 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:17:16.467 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:17:16.575 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:17:16.839 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:17:17.066 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:17:17.075 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:17:17.558 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:17:18.096 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:17:18.152 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:17:19.603 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:17:27.439 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:17:32.412 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:17:32.810 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:17:33.010 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 27.207 seconds (JVM running for 31.803)
+2019-04-16 22:17:33.554 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:17:55.829 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:19:40.538 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 14184 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:19:40.541 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:19:47.000 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:19:47.347 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 309ms. Found 1 repository interfaces.
+2019-04-16 22:19:49.596 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8aa2d299] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:19:50.722 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:19:51.816 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:19:51.918 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:19:52.319 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:19:52.759 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:19:52.771 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:19:53.426 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:19:53.867 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:19:53.922 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:19:56.066 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:20:05.065 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:20:10.152 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:20:10.363 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:20:10.523 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 32.478 seconds (JVM running for 38.287)
+2019-04-16 22:20:10.924 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:20:11.281 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:20:11.285 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:20:11.288 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:20:11.294 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:20:11.300 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:21:25.281 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 21332 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:21:25.283 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:21:28.159 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:21:28.407 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 214ms. Found 1 repository interfaces.
+2019-04-16 22:21:29.573 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e3cad4e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:21:30.146 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:21:31.044 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:21:31.128 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:21:31.332 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:21:31.491 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:21:31.496 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:21:31.851 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:21:32.201 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:21:32.255 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:21:33.412 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:21:36.448 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:21:40.280 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:21:40.521 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:21:40.797 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 16.488 seconds (JVM running for 18.334)
+2019-04-16 22:21:41.184 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:21:41.692 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:21:41.697 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:21:41.703 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:21:41.708 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:21:41.716 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:24:42.660 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 19680 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:24:42.663 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:24:46.131 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:24:46.365 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 209ms. Found 1 repository interfaces.
+2019-04-16 22:24:47.855 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$852aa738] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:24:48.807 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:24:49.990 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:24:50.106 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:24:50.473 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:24:50.713 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:24:50.719 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:24:51.263 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:24:51.668 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:24:51.730 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:24:53.302 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:24:57.623 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:25:02.183 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:25:02.407 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:25:02.663 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 22.066 seconds (JVM running for 26.701)
+2019-04-16 22:25:03.222 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:25:03.861 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:25:03.864 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:25:03.871 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:25:03.877 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:25:03.883 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:25:32.351 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 6940 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:25:32.353 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:25:37.486 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:25:37.717 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 207ms. Found 1 repository interfaces.
+2019-04-16 22:25:39.484 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8431db15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:25:40.129 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:25:41.011 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:25:41.085 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:25:41.314 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:25:41.502 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:25:41.507 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:25:41.975 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:25:42.385 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:25:42.438 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:25:43.947 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:25:49.316 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:25:52.885 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:25:53.201 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:25:53.385 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 22.672 seconds (JVM running for 26.949)
+2019-04-16 22:25:53.747 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:26:02.485 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:26:02.490 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:26:02.504 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:26:02.517 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:26:02.524 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2019-04-16 22:32:07.655 [main] INFO  com.sut.strategy.StrategyApplicationTests - Starting StrategyApplicationTests on DESKTOP-MT2UUI4 with PID 13960 (started by zhangqi in C:\Users\zhangqi\Idea Projects\strategy)
+2019-04-16 22:32:07.662 [main] INFO  com.sut.strategy.StrategyApplicationTests - The following profiles are active: prod
+2019-04-16 22:32:11.836 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-04-16 22:32:12.102 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 235ms. Found 1 repository interfaces.
+2019-04-16 22:32:13.612 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8431db15] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-04-16 22:32:14.306 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2019-04-16 22:32:15.259 [main] INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.microsoft.sqlserver.jdbc.SQLServerConnection.getNetworkTimeout()I)
+2019-04-16 22:32:15.338 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2019-04-16 22:32:15.623 [main] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-04-16 22:32:15.898 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.9.Final}
+2019-04-16 22:32:15.905 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-04-16 22:32:16.424 [main] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-04-16 22:32:16.905 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.SQLServer2012Dialect
+2019-04-16 22:32:16.960 [main] INFO  o.h.engine.jdbc.env.internal.LobCreatorBuilderImpl - HHH000422: Disabling contextual LOB creation as connection was null
+2019-04-16 22:32:18.539 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:32:26.031 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:32:29.444 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2019-04-16 22:32:29.714 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-04-16 22:32:29.891 [main] INFO  com.sut.strategy.StrategyApplicationTests - Started StrategyApplicationTests in 23.93 seconds (JVM running for 27.498)
+2019-04-16 22:32:30.268 [main] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-04-16 22:32:30.667 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2019-04-16 22:32:30.669 [Thread-4] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-04-16 22:32:30.672 [Thread-4] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-04-16 22:32:30.678 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2019-04-16 22:32:30.684 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
