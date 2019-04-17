@@ -1,7 +1,7 @@
 # Cloud-ESB
 
 ## 运行界面
-[DDL](./demo.png)
+![DDL](./demo.png)
 
 ## Deploy Command
 ```bash
