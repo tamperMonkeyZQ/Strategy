@@ -17,6 +17,7 @@ public class ContactController {
     public ModelAndView getContactList(@RequestParam int type) {
         ModelAndView modelAndView = new ModelAndView("contact/list");
         modelAndView.addObject("contactList", tsUserService.findAllByType(type, 1, 10));
+        System.out.println("");
         return modelAndView;
     }
 }
