@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class InformationController {
     @GetMapping("")
     public ModelAndView inforMation(){
-        ModelAndView modelAndView = new ModelAndView("/information");
+        ModelAndView modelAndView = new ModelAndView("information");
         return modelAndView;
     }
 }
