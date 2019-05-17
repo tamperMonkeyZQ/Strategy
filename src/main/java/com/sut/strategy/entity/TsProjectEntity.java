@@ -1,10 +1,7 @@
 package com.sut.strategy.entity;
 
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -104,7 +101,7 @@ public class TsProjectEntity implements Serializable{
   private java.sql.Date cancleTime;
 
   @Column(name = "cancleuserid")
-  private long cancleUserId;
+  private Long cancleUserId;
 
 
 }

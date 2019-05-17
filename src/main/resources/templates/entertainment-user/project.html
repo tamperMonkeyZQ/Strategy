@@ -1,0 +1,222 @@
+<html layout:decorate="entertainment_layout" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Projects list</title>
+
+    <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+    <link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet">
+
+    <link th:href="@{/css/animate.css}" rel="stylesheet">
+    <link th:href="@{/css/style.css}" rel="stylesheet">
+    <script th:src="@{/js/plugins/layer/layer.js}"></script>
+    <script>
+        function showDetail(id) {
+            var userId = [[${session.user.userId}]];
+            console.log(userId);
+            if (userId == 1) {
+                layer.open({
+                    type: 2,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['1024px', '728px'], //宽高
+                    content: '/project/detail?id='+id,
+                    btn: ['确定', '取消'],
+                    yes:function(index, layero) {
+                        la
+                    },
+                    no:function(index, layero) {
+                        //点击取消时，弹出框就没了
+                    }
+                });
+            }else{
+                layer.open({
+                    type: 2,
+                    skin: 'layui-layer-rim', //加上边框
+                    area: ['1024px', '728px'], //宽高
+                    content: '/project/detail?id='+id,
+                    btn: ['添加活动记录', '取消'],
+                    yes:function(index, layero) {
+                        layer.open({
+                            type: 2,
+                            skin: 'layui-layer-rim', //加上边框
+                            area: ['1024px', '728px'], //宽高
+                            content: '/activity/add?id='+id,
+                            btn: ['确定', '取消'],
+                            yes:function(index, layero) {
+                                $.ajax()
+                            },
+                            no:function(index, layero) {
+                                //点击取消时，弹出框就没了
+                            }
+                        });
+                    },
+                    no:function(index, layero) {
+                        //点击取消时，弹出框就没了
+                    }
+                });
+            }
+
+        }
+    </script>
+
+</head>
+
+<body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+
+<div id="wrapper" layout:fragment="content">
+
+
+
+    <div id="page-wrapper" class="gray-bg" style="min-height: 835px;margin-left: 0px;">
+        <div class="row border-bottom">
+
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-sm-4">
+                <h2>Project list</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/index">首页</a>
+                    </li>
+                    <li class="active">
+                        <strong>项目列表</strong>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="wrapper wrapper-content animated fadeInUp">
+
+                    <div class="ibox">
+                        <div class="ibox-title">
+                            <h5>我的项目</h5>
+                            <div class="ibox-tools">
+                                <a href="" class="btn btn-primary btn-xs">创建新项目</a>
+                            </div>
+                        </div>
+                        <div class="ibox-content">
+                            <div class="row m-b-sm m-t-sm">
+                                <div class="col-md-1">
+                                    <button onclick="location.reload()" type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+                                </div>
+                                <div class="col-md-11">
+                                    <div class="input-group"><input type="text" placeholder="搜索" class="input-sm form-control"> <span class="input-group-btn">
+                                        <button type="button" class="btn btn-sm btn-primary"> Go!</button> </span></div>
+                                </div>
+                            </div>
+
+                            <div class="project-list">
+
+                                <table class="table table-hover">
+                                    <tbody>
+                                    <tr th:each="m:${list}">
+                                        <td class="project-status">
+                                            <span class="label label-primary">进行中</span>
+                                        </td>
+                                        <td class="project-title">
+                                            <a th:onclick="|showDetail(${m.id})|" href="#" th:text="${m.projectName}"></a>
+                                            <br>
+                                            <small th:text="|开始时间:${m.beginTime}|"></small>
+                                        </td>
+                                        <td class="project-completion">
+                                            <small th:text="|已经完成：${m.state*10}%|"></small>
+                                            <div class="progress progress-mini">
+                                                <div th:style="|width:${m.state*10}%;|" class="progress-bar"></div>
+                                            </div>
+                                        </td>
+                                        <td class="project-people">
+                                            <a href=""><img alt="image" class="img-circle" src="/img/profile_small.jpg"></a>
+                                            <a href=""><img alt="image" class="img-circle" src="/img/profile_small.jpg"></a>
+                                        </td>
+                                        <td class="project-actions">
+                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> 查看 </a>
+                                            <!--                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="project-status">
+                                            <span class="label label-default">Unactive</span>
+                                        </td>
+                                        <td class="project-title">
+                                            <a href="project_detail.html">Many desktop publishing packages and web</a>
+                                            <br>
+                                            <small>Created 10.08.2014</small>
+                                        </td>
+                                        <td class="project-completion">
+                                            <small>Completion with: 8%</small>
+                                            <div class="progress progress-mini">
+                                                <div style="width: 8%;" class="progress-bar"></div>
+                                            </div>
+                                        </td>
+                                        <td class="project-people">
+                                            <a href=""><img alt="image" class="img-circle" src="/img/profile_small.jpg"></a>
+                                            <a href=""><img alt="image" class="img-circle" src="/img/profile_small.jpg"></a>
+                                        </td>
+                                        <td class="project-actions">
+                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-folder"></i> View </a>
+                                            <a href="#" class="btn btn-white btn-sm"><i class="fa fa-pencil"></i> Edit </a>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="pull-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company © 2014-2017
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Mainly scripts -->
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="/js/inspinia.js"></script>
+<script src="/js/plugins/pace/pace.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('#loading-example-btn').click(function () {
+            btn = $(this);
+            simpleLoad(btn, true)
+
+            simpleLoad(btn, false)
+        });
+    });
+
+    function simpleLoad(btn, state) {
+        if (state) {
+            btn.children().addClass('fa-spin');
+            btn.contents().last().replaceWith(" Loading");
+        } else {
+            setTimeout(function () {
+                btn.children().removeClass('fa-spin');
+                btn.contents().last().replaceWith(" Refresh");
+            }, 2000);
+        }
+    }
+</script>
+
+
+
+</body></html>

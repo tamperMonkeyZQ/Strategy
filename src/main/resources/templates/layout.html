@@ -6,56 +6,55 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>INSPINIA | Dashboard</title>
+        <title>教育服务"五大区域"工作信息共享平台</title>
 
-        <link th:href="@{css/bootstrap.min.css}" rel="stylesheet">
-        <link th:href="@{font-awesome/css/font-awesome.css}" rel="stylesheet">
+        <link th:href="@{/css/bootstrap.min.css}" rel="stylesheet">
+        <link th:href="@{/font-awesome/css/font-awesome.css}" rel="stylesheet">
 
         <!-- Toastr style -->
-        <link th:href="@{css/plugins/toastr/toastr.min.css}" rel="stylesheet">
+        <link th:href="@{/css/plugins/toastr/toastr.min.css}" rel="stylesheet">
 
         <!-- Gritter -->
-        <link th:href="@{js/plugins/gritter/jquery.gritter.css}" rel="stylesheet">
+        <link th:href="@{/js/plugins/gritter/jquery.gritter.css}" rel="stylesheet">
 
-        <link th:href="@{css/animate.css}" rel="stylesheet">
-        <link th:href="@{css/style.css}" rel="stylesheet">
+        <link th:href="@{/css/animate.css}" rel="stylesheet">
+        <link th:href="@{/css/style.css}" rel="stylesheet">
         <!-- Mainly scripts -->
-        <script th:src="@{js/jquery-3.1.1.min.js}"></script>
-        <script th:src="@{js/bootstrap.min.js}"></script>
-        <script th:src="@{js/plugins/metisMenu/jquery.metisMenu.js}"></script>
-        <script th:src="@{js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
+        <script th:src="@{/js/jquery-3.1.1.min.js}"></script>
+        <script th:src="@{/js/bootstrap.min.js}"></script>
+        <script th:src="@{/js/plugins/metisMenu/jquery.metisMenu.js}"></script>
+        <script th:src="@{/js/plugins/slimscroll/jquery.slimscroll.min.js}"></script>
         <!-- Flot -->
-        <script th:src="@{js/plugins/flot/jquery.flot.js}"></script>
-        <script th:src="@{js/plugins/flot/jquery.flot.tooltip.min.js}"></script>
-        <script th:src="@{js/plugins/flot/jquery.flot.spline.js}"></script>
-        <script th:src="@{js/plugins/flot/jquery.flot.resize.js}"></script>
-        <script th:src="@{js/plugins/flot/jquery.flot.pie.js}"></script>
+        <script th:src="@{/js/plugins/flot/jquery.flot.js}"></script>
+        <script th:src="@{/js/plugins/flot/jquery.flot.tooltip.min.js}"></script>
+        <script th:src="@{/js/plugins/flot/jquery.flot.spline.js}"></script>
+        <script th:src="@{/js/plugins/flot/jquery.flot.resize.js}"></script>
+        <script th:src="@{/js/plugins/flot/jquery.flot.pie.js}"></script>
 
         <!-- Peity -->
-        <script th:src="@{js/plugins/peity/jquery.peity.min.js}"></script>
-        <script th:src="@{js/demo/peity-demo.js}"></script>
+        <script th:src="@{/js/plugins/peity/jquery.peity.min.js}"></script>
+        <script th:src="@{/js/demo/peity-demo.js}"></script>
 
         <!-- Custom and plugin javascript -->
-        <script th:src="@{js/inspinia.js}"></script>
-        <script th:src="@{js/plugins/pace/pace.min.js}"></script>
+        <script th:src="@{/js/inspinia.js}"></script>
+        <script th:src="@{/js/plugins/pace/pace.min.js}"></script>
 
         <!-- jQuery UI -->
-        <script th:src="@{js/plugins/jquery-ui/jquery-ui.min.js}"></script>
+        <script th:src="@{/js/plugins/jquery-ui/jquery-ui.min.js}"></script>
 
         <!-- GITTER -->
-        <script th:src="@{js/plugins/gritter/jquery.gritter.min.js}"></script>
+        <script th:src="@{/js/plugins/gritter/jquery.gritter.min.js}"></script>
 
         <!-- Sparkline -->
-        <script th:src="@{js/plugins/sparkline/jquery.sparkline.min.js}"></script>
+        <script th:src="@{/js/plugins/sparkline/jquery.sparkline.min.js}"></script>
 
         <!-- Sparkline demo data  -->
-        <script th:src="@{js/demo/sparkline-demo.js}"></script>
+        <script th:src="@{/js/demo/sparkline-demo.js}"></script>
 
         <!-- ChartJS-->
-        <script th:src="@{js/plugins/chartJs/Chart.min.js}"></script>
-
+        <script th:src="@{/js/plugins/chartJs/Chart.min.js}"></script>
         <!-- Toastr -->
-        <script th:src="@{js/plugins/toastr/toastr.min.js}"></script>
+        <script th:src="@{/js/plugins/toastr/toastr.min.js}"></script>
 
         <style type="text/css">
             .jqstooltip {
@@ -97,14 +96,14 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element"> <span>
-                                <img alt="image" class="img-circle" th:src="@{img/profile_small.jpg}">
+                                <img alt="image" class="img-circle" th:src="@{/img/profile_small.jpg}">
                                  </span>
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear"> <span class="block m-t-xs"> <strong
-                                        class="font-bold">管理员</strong>
-                                 </span> <span class="text-muted text-xs block">辽宁省教育厅<b class="caret"></b></span> </span> </a>
+                                        class="font-bold" th:text="${session.user.userName}"></strong>
+                                 </span> <span class="text-muted text-xs block" th:text="${session.user.organization}"><b class="caret"></b></span> </span> </a>
                             <ul class="dropdown-menu animated fadeInRight m-t-xs">
-                                <li><a href="#">个人信息</a></li>
+                                <li><a id="personInfo" href="#">个人信息</a></li>
                                 <li class="divider"></li>
                                 <li><a href="/">注销</a></li>
                             </ul>
@@ -116,24 +115,22 @@
                     <li class="">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">机构联系人管理</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse" style="height: 0px;">
-                            <li><a href="#">下辖机构管理</a></li>
-                            <li><a href="#">下辖机构联系人管理</a></li>
-                            <li><a href="#">地方联系人管理</a></li>
+                            <li><a href="/contact/list?type=2">高校用户管理</a></li>
+                            <li><a href="/contact/list?type=3">地方用户管理</a></li>
                         </ul>
                     </li>
                     <li class="">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">需求管理</span> <span class="fa arrow"></span></a>
+                        <a href="/admin/index"><i class="fa fa-th-large"></i> <span class="nav-label">需求管理</span> <span class="fa arrow"></span></a>
                     </li>
                     <li class="">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">项目对接情况</span> <span class="fa arrow"></span></a>
+                        <a href="/project/matchList"><i class="fa fa-th-large"></i> <span class="nav-label">项目对接情况</span> <span class="fa arrow"></span></a>
                     </li>
                     <li class="">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">对接项目汇报</span> <span class="fa arrow"></span></a>
+                        <a href="/charts"><i class="fa fa-th-large"></i> <span class="nav-label">对接项目汇报</span> <span class="fa arrow"></span></a>
                     </li>
                     <li class="">
-                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">需求举报管理</span> <span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">需求举报管理</span> <span class="fa arrow"></span></a>
                     </li>
-
                     <!--<li class="landing_link">-->
                         <!--<a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span>-->
                             <!--<span class="label label-warning pull-right">NEW</span></a>-->
@@ -154,7 +151,7 @@
                         </a>
                         <form role="search" class="navbar-form-custom" action="search_results.html">
                             <div class="form-group">
-                                <input type="text" placeholder="Search for something..." class="form-control"
+                                <input type="text" placeholder="" class="form-control"
                                        name="top-search" id="top-search">
                             </div>
                         </form>
@@ -213,8 +210,8 @@
 
 
                         <li>
-                            <a href="login.html">
-                                <i class="fa fa-sign-out"></i> Log out
+                            <a href="/">
+                                <i class="fa fa-sign-out"></i> 退出登录
                             </a>
                         </li>
                         <li>
@@ -240,5 +237,22 @@
 
         </div>
     </div>
+    <script>
+        $("#personInfo").click(function () {
+            layer.open({
+                type: 2,
+                skin: 'layui-layer-rim', //加上边框
+                area: ['1024px', '728px'], //宽高
+                content: '/personInfo',
+                btn: ['确定', '取消'],
+                yes:function(index, layero) {
+
+                },
+                no:function(index, layero) {
+                    //点击取消时，弹出框就没了
+                }
+            })
+        })
+    </script>
     </body>
 </html>

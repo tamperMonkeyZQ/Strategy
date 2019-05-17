@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -37,5 +38,15 @@ public class TsUserServiceImpl implements TsUserService {
     @Override
     public List<TsUserEntity> findAll() {
         return null;
+    }
+
+    @Override
+    public List<TsUserEntity> findAllByType(int type,int pageNumber,int pageSize) {
+        QTsUserEntity qTsUserEntity = QTsUserEntity.tsUserEntity;
+        List<TsUserEntity> list = new ArrayList<>();
+        tsUserRepository.findAll(qTsUserEntity.groupId.eq(String.valueOf(type))).forEach(tsUserEntity -> {
+            list.add(tsUserEntity);
+        });
+        return list;
     }
 }

@@ -1,0 +1,113 @@
+<html layout:decorate="layout" xmlns:th="http://www.w3.org/1999/xhtml" xmlns:layout="http://www.w3.org/1999/xhtml"><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | Projects detail</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+</head>
+
+<body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<div id="wrapper">
+
+
+
+    <div layout:fragment="content" id="page-wrapper" class="gray-bg" style="min-height: 835px;margin-left: 0px;">
+        <div class="row border-bottom">
+
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-9">
+                <h2>联系人</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/admin/index">首页</a>
+                    </li>
+                    <li class="active">
+                        <strong>联系人管理</strong>
+                    </li>
+                </ol>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div th:each="contact:${contactList}" class="col-lg-4">
+                    <div class="contact-box">
+                        <a href="#">
+                            <div class="col-sm-4">
+                                <div class="text-center">
+                                    <img alt="image" class="img-circle m-t-xs img-responsive" src="/img/profile_small.jpg">
+<!--                                    <div class="m-t-xs font-bold" th:text="${contact.realName}"></div>-->
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <h3><strong th:text="${contact.realName}"></strong></h3>
+                                <p th:text="${contact.organization}"><i class="fa fa-map-marker"></i></p>
+                                <address>
+                                    <strong th:text="${contact.userName}"></strong><br>
+                                    <abbr title="Phone">P:</abbr><span th:text="${contact.phone}"></span>
+                                </address>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Mainly scripts -->
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom a/nd plugin javascript -->
+<script src="/js/inspinia.js"></script>
+<script src="/js/plugins/pace/pace.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+
+        $('#loading-example-btn').click(function () {
+            btn = $(this);
+            simpleLoad(btn, true)
+
+            // Ajax example
+//                $.ajax().always(function () {
+//                    simpleLoad($(this), false)
+//                });
+
+            simpleLoad(btn, false)
+        });
+    });
+
+    function simpleLoad(btn, state) {
+        if (state) {
+            btn.children().addClass('fa-spin');
+            btn.contents().last().replaceWith(" Loading");
+        } else {
+            setTimeout(function () {
+                btn.children().removeClass('fa-spin');
+                btn.contents().last().replaceWith(" Refresh");
+            }, 2000);
+        }
+    }
+
+
+</script>
+
+
+
+</body></html>

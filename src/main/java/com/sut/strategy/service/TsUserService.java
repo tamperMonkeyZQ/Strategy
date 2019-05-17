@@ -11,4 +11,6 @@ public interface TsUserService {
     Optional<TsUserEntity> findByUserId(long userId);
 
     List<TsUserEntity> findAll();
+
+    List<TsUserEntity> findAllByType(int type,int pageNumber,int pageSize);
 }

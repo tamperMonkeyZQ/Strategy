@@ -1,0 +1,303 @@
+<html layout:decorate="layout" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>教育服务"五大区域"工作信息共享平台</title>
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="/css/animate.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <script>
+        $(function () {
+
+            var lineData = {
+                labels: ["一月", "二月", "三月", "四月", "五月", "六月", "七月"],
+                datasets: [
+
+                    {
+                        label: "2017年数据",
+                        backgroundColor: 'rgba(26,179,148,0.5)',
+                        borderColor: "rgba(26,179,148,0.7)",
+                        pointBackgroundColor: "rgba(26,179,148,1)",
+                        pointBorderColor: "#fff",
+                        data: [28, 48, 40, 19, 86, 27, 90]
+                    },{
+                        label: "2018年数据",
+                        backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                        pointBorderColor: "#fff",
+                        data: [65, 59, 80, 81, 56, 55, 40]
+                    }
+                ]
+            };
+
+            var lineOptions = {
+                responsive: true
+            };
+
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            new Chart(ctx, {type: 'line', data: lineData, options:lineOptions});
+
+            var barData = {
+                labels: ["传统优势产业", "战略性新兴产业", "现代化大农业及绿色食品工业", "生产性服务业", "生性服务业", "其他"],
+                datasets: [
+                    {
+                        label: "2018年数据",
+                        backgroundColor: 'rgba(220, 220, 220, 0.5)',
+                        pointBorderColor: "#fff",
+                        data: [65, 59, 80, 81, 56, 55]
+                    },
+                    {
+                        label: "2019年数据",
+                        backgroundColor: 'rgba(26,179,148,0.5)',
+                        borderColor: "rgba(26,179,148,0.7)",
+                        pointBackgroundColor: "rgba(26,179,148,1)",
+                        pointBorderColor: "#fff",
+                        data: [28, 48, 40, 19, 86, 27]
+                    }
+                ]
+            };
+
+            var barOptions = {
+                responsive: true
+            };
+
+
+            var ctx2 = document.getElementById("barChart").getContext("2d");
+            new Chart(ctx2, {type: 'bar', data: barData, options:barOptions});
+
+            var polarData = {
+                datasets: [{
+                    data: [
+                        190,130,300,300,200
+                    ],
+                    backgroundColor: [
+                        "#a3e1d4", "#0eaed7", "#6cc2cc","#a3e144", "#0ed1d7"
+                    ],
+                    label: [
+                        "My Radar chart"
+                    ]
+                }],
+                labels: [
+                    "科技需求","人才需求","培训需求","规划需求","综合需求"
+                ]
+            };
+
+            var polarOptions = {
+                segmentStrokeWidth: 2,
+                responsive: true
+
+            };
+
+            var ctx3 = document.getElementById("polarChart").getContext("2d");
+            new Chart(ctx3, {type: 'polarArea', data: polarData, options:polarOptions});
+
+            var doughnutData = {
+                labels: ["辽宁沿海经济带","沈阳经济区","突破辽西北","沈抚新区","县域经济" ],
+                datasets: [{
+                    data: [100,323,265,323,453],
+                    backgroundColor: ["#a3e1d4","#82c0de","#45cf60","#a332d4","#de43de"]
+                }]
+            } ;
+
+
+            var doughnutOptions = {
+                responsive: true
+            };
+
+
+            var ctx4 = document.getElementById("doughnutChart").getContext("2d");
+            new Chart(ctx4, {type: 'doughnut', data: doughnutData, options:doughnutOptions});
+
+
+            var radarData = {
+                labels: ["种植业",
+                    ,"林业"
+                    ,"畜牧业"
+                    ,"渔业"
+                    ,"其他"
+                    ,"装备制造"
+                    ,"石油化工"
+                    ,"冶金"
+                    ,"轻工"
+                    ,"建材"
+                    ,"电子信息"
+                    ,"纺织"
+                    ,"医药"
+                    ,"其他"
+                    ,"商贸流通"
+                    ,"物流"
+                    ,"旅游"
+                    ,"金融"
+                    ,"卫生健康"
+                    ,"文化"
+                    ,"体育"
+                    ,"教育"
+                    ,"其他"],
+                datasets: [
+                    {
+                        label: "本月数据",
+                        backgroundColor: "rgba(40,189,220,0.2)",
+                        borderColor: "rgb(34,203,220)",
+                        data: [50,
+                            3
+                            ,16
+                            ,9
+                            ,17
+                            ,90
+                            ,32
+                            ,20
+                            ,11
+                            ,7
+                            ,25
+                            ,8
+                            ,5
+                            ,28
+                            ,3
+                            ,6
+                            ,9
+                            ,6
+                            ,43
+                            ,6
+                            ,88
+                            ,17
+                            ,20]
+                    }
+                ]
+            };
+
+            var radarOptions = {
+
+
+            };
+
+            var ctx5 = document.getElementById("radarChart").getContext("2d");
+            new Chart(ctx5,{type: 'radar', data: radarData, options:radarOptions});
+
+        });
+    </script>
+
+</head>
+
+<body class="pace-done"><div class="pace  pace-inactive"><div class="pace-progress" data-progress-text="100%" data-progress="99" style="transform: translate3d(100%, 0px, 0px);">
+    <div class="pace-progress-inner"></div>
+</div>
+    <div class="pace-activity"></div></div>
+<div layout:fragment="content" id="wrapper">
+
+
+    <div id="page-wrapper" class="gray-bg" style="min-height: 835px;margin-left: 0px;">
+        <div class="row border-bottom">
+
+        </div>
+        <div class="row wrapper border-bottom white-bg page-heading">
+            <div class="col-lg-10">
+                <h2>项目统计分析</h2>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="/index">首页</a>
+                    </li>
+                    <li class="active">
+                        <a>项目统计分析</a>
+                    </li>
+                </ol>
+            </div>
+            <div class="col-lg-2">
+
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>需求在各产业分布情况</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                                <canvas id="radarChart" height="904" width="1810" style="display: block; width: 905px; height: 452px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>需求增长图
+                                <small> 最近半年内</small>
+                            </h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                                <canvas id="lineChart" height="844" width="1810" style="display: block; width: 905px; height: 422px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>产业分布情况</h5>
+                        </div>
+                        <div class="ibox-content">
+                            <div><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                                <canvas id="barChart" height="844" width="1810" style="display: block; width: 905px; height: 422px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>需求属性分布图</h5>
+
+                        </div>
+                        <div class="ibox-content">
+                            <div class="text-center"><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                                <canvas id="polarChart" height="844" width="1810" style="display: block; width: 905px; height: 422px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ibox float-e-margins">
+                        <div class="ibox-title">
+                            <h5>区域分布图 </h5>
+
+                        </div>
+                        <div class="ibox-content">
+                            <div><iframe class="chartjs-hidden-iframe" style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;"></iframe>
+                                <canvas id="doughnutChart" height="844" width="1810" style="display: block; width: 905px; height: 422px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- Mainly scripts -->
+<script src="/js/jquery-3.1.1.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<!-- Custom and plugin javascript -->
+<script src="/js/inspinia.js"></script>
+<script src="/js/plugins/pace/pace.min.js"></script>
+
+
+
+
+</body></html>

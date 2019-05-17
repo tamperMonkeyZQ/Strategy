@@ -1166,7 +1166,7 @@ Licensed under the MIT license.
                                 }
 
                                 if (val == null) {
-                                    if (f.required)
+                                    if (f.project)
                                         nullify = true;
 
                                     if (f.defaultValue != null)

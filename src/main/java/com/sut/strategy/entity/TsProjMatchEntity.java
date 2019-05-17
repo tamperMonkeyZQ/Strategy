@@ -18,7 +18,6 @@ import java.io.Serializable;
 public class TsProjMatchEntity implements Serializable{
 
   @Id
-  @GeneratedValue(strategy=GenerationType.IDENTITY)
   @Column(name = "projid")
   private long projId;
 

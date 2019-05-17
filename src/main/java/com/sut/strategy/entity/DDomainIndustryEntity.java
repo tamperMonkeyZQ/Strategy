@@ -17,14 +17,15 @@ import java.io.Serializable;
 @Table(name = "D_DomainIndustry",schema = "dbo")
 public class DDomainIndustryEntity implements Serializable{
 
-  @Id
-  @GeneratedValue(strategy=GenerationType.IDENTITY)
+
   @Column(name = "domainid")
   private String domainId;
 
   @Column(name = "domainname")
   private String domainName;
 
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   @Column(name = "industryid")
   private String industryId;
 
